@@ -113,18 +113,20 @@ class App extends Component {
     }
     return (
       <>
-        <h2>Crypto-JS encryptAES</h2>
+        <h2>Crypto-JS (encryptAES)</h2>
         <div className="form-group">
-          <input className="form-control" value={this.state.inputText} onChange={this.handleInputTextChange} style={{width:'40%', height:40, marginRight: 20}} placeholder="Input Text" /> 
-          <input className="form-control" value={this.state.inputKey} onChange={this.handleInputKeyChange} style={{width:'40%', height:40}} placeholder="Key" />  4d374d987717e508f4990de38812ce3b
+          <input className="form-control" value={this.state.inputText} onChange={this.handleInputTextChange} style={{width:'50%', height:30, marginRight: 20}} placeholder="Input Text" /> 
+          <input className="form-control" value={this.state.inputKey} onChange={this.handleInputKeyChange} style={{width:'20%', height:30}} placeholder="Key" />  current key: 4d374d987717e508f4990de38812ce3b
         </div>
 
         <pre className="output"><code>{this.state.encryptedBase64Input}</code></pre>
 
-        <h2>Crypto-JS decryptAES</h2>
+
+
+        <h2>Crypto-JS (decryptAES)</h2>
           <div className="form-group">
-          <input className="form-control" value={this.state.encryptedBase64} onChange={this.handleMsgChange} style={{width:'40%', height:40, marginRight: 20}} placeholder="Encrypted String" /> 
-          <input className="form-control" value={this.state.key} onChange={this.handleDecryptKeyChange} style={{width:'40%', height:40}} placeholder="Key" />  4d374d987717e508f4990de38812ce3b
+          <input className="form-control" value={this.state.encryptedBase64} onChange={this.handleMsgChange} style={{width:'50%', height:30, marginRight: 20}} placeholder="Encrypted String" /> 
+          <input className="form-control" value={this.state.key} onChange={this.handleDecryptKeyChange} style={{width:'20%', height:30}} placeholder="Key" />  current key: 4d374d987717e508f4990de38812ce3b
         </div>
         <pre className="output"><code>{this.state.outputText}</code></pre>
         
