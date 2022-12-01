@@ -113,23 +113,22 @@ class App extends Component {
     }
     return (
       <>
-        <h1>Crypto-JS encryptAES</h1>
+        <h2>Crypto-JS encryptAES</h2>
         <div className="form-group">
           <input className="form-control" value={this.state.inputText} onChange={this.handleInputTextChange} style={{width:'40%', height:40, marginRight: 20}} placeholder="Input Text" /> 
-          <input className="form-control" value={this.state.inputKey} onChange={this.handleInputKeyChange} style={{width:'40%', height:40}} placeholder="Key" />
+          <input className="form-control" value={this.state.inputKey} onChange={this.handleInputKeyChange} style={{width:'40%', height:40}} placeholder="Key" />  4d374d987717e508f4990de38812ce3b
         </div>
 
         <pre className="output"><code>{this.state.encryptedBase64Input}</code></pre>
 
-        <h1>Crypto-JS decryptAES</h1>
-        4d374d987717e508f4990de38812ce3b
-        <div className="form-group">
+        <h2>Crypto-JS decryptAES</h2>
+          <div className="form-group">
           <input className="form-control" value={this.state.encryptedBase64} onChange={this.handleMsgChange} style={{width:'40%', height:40, marginRight: 20}} placeholder="Encrypted String" /> 
-          <input className="form-control" value={this.state.key} onChange={this.handleDecryptKeyChange} style={{width:'40%', height:40}} placeholder="Key" />
+          <input className="form-control" value={this.state.key} onChange={this.handleDecryptKeyChange} style={{width:'40%', height:40}} placeholder="Key" />  4d374d987717e508f4990de38812ce3b
         </div>
-
         <pre className="output"><code>{this.state.outputText}</code></pre>
-        <small><a href="https://stackblitz.com/edit/cryptojs-aes-encrypt-decrypt" target="_blank">(View source code)</a></small>
+        
+        <small>powered by djsabina</small>
 
       </>
     );
